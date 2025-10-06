@@ -31,6 +31,7 @@ data['RSI'] = calculate_rsi(data['Close'])
 data['Signal'] = 0
 data.loc[data['RSI'] < 30, 'Signal'] = 1 #Buy signal
 data.loc[data['RSI'] > 70, 'Signal'] = -1 #Sell signal
+# The issue I have right now is, this is too simple and not realistic 
 
 # Calculate returns 
 data['Market Return'] = data['Close'].pct_change() # pct_chagne gives the daily market returns (today-yesterday)/yesterday
