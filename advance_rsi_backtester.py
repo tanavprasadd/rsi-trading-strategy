@@ -77,7 +77,4 @@ plt.xlabel('Date')
 plt.ylabel('Cumulative Return')
 plt.legend()
 plt.grid()
-
-# Add preformace metrics to the figure 
-
 plt.show()
